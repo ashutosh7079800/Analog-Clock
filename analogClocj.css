@@ -1,0 +1,53 @@
+#clockContainer{
+    /* to make responsive */
+    position: relative;
+
+   
+    /* total height = display_size of 40% */
+    height: 40vw;
+    width: 40vw;
+
+    /* no-repeat because we dont want that our image will repeat */
+    background: url(analog\ clock\ image.jpeg) no-repeat;
+
+    /* to pace clock at the center of clockContainer */
+    background-size: 100%;
+
+    /* to place the box at centre */
+    margin: auto;
+}
+
+#hour{
+    width: 1%;
+    height: 28%;
+    top: 23%;
+    left: 49.9%;
+    opacity: 0.8;
+    /* display: none; */
+}
+
+#minute{
+    width: 0.7%;
+    height: 33%;
+    top: 16%;
+    left: 49.9%;
+    opacity: 0.8;
+    /* display: none; */
+}
+
+
+#second{
+    width: 0.5%;
+    height: 39%;
+    top: 10.3%;
+    left: 50%;
+    opacity: 0.8;
+/* display: none; */
+}
+#hour , #minute ,#second {
+    position: absolute;
+    background-color: black;
+    
+    /* rotation bottom end se hoga */
+    transform-origin: bottom;
+}
